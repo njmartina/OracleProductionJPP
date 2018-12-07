@@ -4,11 +4,10 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-  /**
-  Allows employee to enter their first and last name
-  Generates a department ID from their name information
-
-   */
+/**
+ * Allows employee to enter their first and last name Generates a department ID from their name
+ * information
+ */
 public class EmployeeInfo {
 
   private StringBuilder name = new StringBuilder();
@@ -17,12 +16,11 @@ public class EmployeeInfo {
   private Pattern p;
   private Scanner in;
 
-    /**
-     * Creates new scanner, calls method to set the employee name
-     * Checks if the name is a first and last separated by a space
-     * If so, sets the code to the first letter of the first name followed by the last name
-     * Sets string patter
-     */
+  /**
+   * Creates new scanner, calls method to set the employee name Checks if the name is a first and
+   * last separated by a space If so, sets the code to the first letter of the first name followed
+   * by the last name Sets string patter
+   */
   EmployeeInfo() {
     in = new Scanner(System.in);
 
@@ -37,17 +35,17 @@ public class EmployeeInfo {
     String patternString = "([A-Z])[a-z][a-z][a-z]\\d\\d";
     p = Pattern.compile(patternString);
 
+    setDeptId();
     in.close();
   }
 
-  public String reverseString(String id){
-    char letter = id.charAt(id.length()-1);
+  public String reverseString(String id) {
+    char letter = id.charAt(id.length() - 1);
 
-    if (id.length() == 1){
+    if (id.length() == 1) {
       return Character.toString(letter);
-    }
-    else {
-      return letter+reverseString(id.substring(0,id.length()-1));
+    } else {
+      return letter + reverseString(id.substring(0, id.length() - 1));
     }
   }
 
@@ -68,7 +66,7 @@ public class EmployeeInfo {
   }
 
   private String inputName() {
-    System.out.println("Please input employee name(first and last separated by a space): ");
+    System.out.println("Please enter your first and last name:");
     return in.nextLine();
   }
 
@@ -77,26 +75,26 @@ public class EmployeeInfo {
     return name.toString().contains(str);
   }
 
-  public String getDeptId(){
-    System.out.println("Please enter the department ID: ");
+  public String getDeptId() {
+    System.out.println("Please enter the department ID:");
     return in.nextLine();
   }
 
-  private void setDeptId(){
+  private void setDeptId() {
+
     String inputID = getDeptId();
-    if (validId(inputID)){
+    if (validId(inputID)) {
       deptId = reverseString(inputID);
-    }
-    else{
+    } else {
       deptId = "None01";
     }
   }
 
-  private String getId(){
+  private String getId() {
     return deptId;
   }
 
-  private boolean validId(String id){
+  private boolean validId(String id) {
     boolean matches = false;
 
     Matcher matcher = p.matcher(id);
@@ -108,6 +106,6 @@ public class EmployeeInfo {
   @Override
   public String toString() {
     return "Employee Code : " + code + '\n' +
-          "Department Number : " + deptId;
+        "Department Number : " + deptId;
   }
 }

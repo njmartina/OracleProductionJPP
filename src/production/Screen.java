@@ -1,6 +1,7 @@
 package production;
+
 /**
-  Concrete class Screen used to define resolution, refresh rate, and response time
+ * Concrete class Screen used to define resolution, refresh rate, and response time
  */
 public class Screen implements ScreenSpec {
 
@@ -10,7 +11,7 @@ public class Screen implements ScreenSpec {
   int responsetime;
 
   //Overloaded constructor takes screen resolution, refresh rate, and response time
-  Screen(String resolution, int refreshrate, int responsetime){
+  Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
     this.responsetime = responsetime;

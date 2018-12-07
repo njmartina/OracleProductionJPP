@@ -1,6 +1,7 @@
 package production;
+
 /**
-  Enum used to implement the following functions
+ * Enum used to implement the following functions
  */
 public interface ScreenSpec {
 

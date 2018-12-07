@@ -5,8 +5,7 @@ package production;
  */
 public class AudioPlayerDriver {
 
-  public static void testAudioPlayer(){
-
+  public static void testAudioPlayer() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
     a1.play();

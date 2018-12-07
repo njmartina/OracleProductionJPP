@@ -5,7 +5,7 @@ package production;
  */
 public class PlayerDriver {
 
-  public static void testPlayer(){
+  public static void testPlayer() {
     Screen screen = new Screen("1366x768", 40, 22);
     MoviePlayer a3 = new MoviePlayer("Pyle PDV156BK", screen, MonitorType.LED);
 

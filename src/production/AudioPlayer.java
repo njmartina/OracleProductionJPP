@@ -1,7 +1,7 @@
 package production;
 
 /**
-  Concrete class to capture the details of an audio player
+ * Concrete class to capture the details of an audio player
  */
 public class AudioPlayer extends Product implements MultimediaControl {
 
@@ -10,7 +10,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
 
   //Overloaded constructor takes in name of audio player and audio specification
-  AudioPlayer(String name, String audioSpecification){
+  AudioPlayer(String name, String audioSpecification) {
 
     //Calls Product super constructor to assign name
     super(name);

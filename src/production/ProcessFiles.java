@@ -9,10 +9,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 
-  /**
-  Class used to process employee and product info and write to a file
-  Utilizes paths to get location of file
-   */
+/**
+ * Class used to process employee and product info and write to a file Utilizes paths to get
+ * location of file
+ */
 public class ProcessFiles {
 
   private Path p;
@@ -42,11 +42,11 @@ public class ProcessFiles {
     printWriter.close();
   }
 
-  public void WriteFile(ArrayList<Product> products) throws IOException{
+  public void WriteFile(ArrayList<Product> products) throws IOException {
     FileWriter writer = new FileWriter(p3.toString(), true);
     PrintWriter printWriter = new PrintWriter(writer);
 
-    for (Product p : products){
+    for (Product p : products) {
       printWriter.println(p.toString());
     }
 

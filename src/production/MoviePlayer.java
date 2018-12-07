@@ -1,7 +1,7 @@
 package production;
 
 /**
-  Concrete class to capture the details of a movie player
+ * Concrete class to capture the details of a movie player
  */
 public class MoviePlayer extends Product implements MultimediaControl {
 
@@ -12,7 +12,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   /**
    * Overloaded constructor takes in name of audtio player, screen type, and monitor type
    */
-  MoviePlayer(String name, Screen screen, MonitorType monitorType){
+  MoviePlayer(String name, Screen screen, MonitorType monitorType) {
 
     //Calls Product super constructor to assign name
     super(name);
@@ -46,7 +46,8 @@ public class MoviePlayer extends Product implements MultimediaControl {
   //Overloaded toString method to add screen and monitor type
   @Override
   public String toString() {
-    return super.toString() + "\n" + "Screen : " + screen.toString() + "\n" + "Monitor Type : " + monitorType;
+    return super.toString() + "\n" + "Screen : " + screen.toString() + "\n" + "Monitor Type : "
+        + monitorType;
 
   }
 }

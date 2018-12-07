@@ -9,14 +9,15 @@ import java.io.IOException;
  */
 public class ViewFileInfo {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
-    FileReader fr= null;
+    FileReader fr = null;
     try {
       fr = new FileReader("C:\\LineTest\\TestResults.txt");
       int i;
-      while((i=fr.read())!=-1)
-        System.out.print((char)i);
+      while ((i = fr.read()) != -1) {
+        System.out.print((char) i);
+      }
       fr.close();
     } catch (FileNotFoundException e) {
       e.printStackTrace();

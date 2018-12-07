@@ -7,10 +7,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Abstract class used as a skeleton for further products
- * Features incrementing serial number, dates and names
+ * Abstract class used as a skeleton for further products Features incrementing serial number, dates
+ * and names
  */
-abstract public class Product implements Item, Comparable <Product> {
+abstract public class Product implements Item, Comparable<Product> {
 
   //Variables used for product class
   private int serialNumber;
@@ -20,9 +20,9 @@ abstract public class Product implements Item, Comparable <Product> {
 
   private static int currentProductionNumber = 1;
 
-  /**Constructor takes product name and sets field variable
-   * Sets serialnumber to production number while incrementing
-   * Sets manufactured date to current date
+  /**
+   * Constructor takes product name and sets field variable Sets serialnumber to production number
+   * while incrementing Sets manufactured date to current date
    **/
   public Product(String name) {
     this.name = name;
@@ -66,8 +66,8 @@ abstract public class Product implements Item, Comparable <Product> {
 
   }
 
-  static void printType(List<?> list, Class<? extends Product> c){
-    for (Object o : list){
+  static void printType(List<?> list, Class<? extends Product> c) {
+    for (Object o : list) {
       if (c.isInstance(o)) {
         System.out.println(o.toString());
       }
