@@ -5,7 +5,7 @@
 * OracleProduction Project
 
 # Summary
-<p> OracleProduction is designed to be a flexible and easy to use program for any production line. Any type of product can be introduced to the plant such as multimedia devices like music and movie players. The structure of the program allows for easy modification to handle different products. </p>
+<p> OracleProduction is designed to be a flexible and easy to use program for any production line. Any type of product can be introduced to the plant such as multimedia devices or television screens. The structure of the program allows for easy modification to handle different products. </p>
 
 # Features
 * ItemType interface for implementing getters and setters along with constants such as manufacturere name and date
