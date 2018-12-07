@@ -1,11 +1,14 @@
 # OracleProductionJPP
-OracleProduction Program by Nicolo Martina COP3003 Java template used for creating and recording future production line.
+* Nicolo Martina
+* 8/22/18 - 12/6/18
+* COP 3003 - Intro to Object Oriented Programming
+* OracleProduction Project
 
-Will be flexible, able to be used in any production line, allows easy modificaiton.
+# Summary
+<p> OracleProduction is designed to be a flexible and easy to use program for any production line. Any type of product can be introduced to the plant such as multimedia devices like music and movie players. The structure of the program allows for easy modification to handle different products. </p>
 
-Item interface for implementing getters and setters along with a constant for manufacture name and manufacturedON date.
-
-ItemType enum contains pre-set codes for each item type.
-
-Product.java implements the Item interface, creating basic functionality that all items will have. Overrides the toString method in order to show production info.
-
+# Features
+* ItemType interface for implementing getters and setters along with constants such as manufacturere name and date
+* Audio and Movie players that determines which type of media is playing and adjusts accordingly
+* Employee info entered by the user of the program, generates a deptartment ID automatically
+* File reading and writing for easy storing of information
