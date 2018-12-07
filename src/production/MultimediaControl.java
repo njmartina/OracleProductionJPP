@@ -1,5 +1,5 @@
 package production;
-/*
+/**
   Interface used to implement following player methods
  */
 public interface MultimediaControl {

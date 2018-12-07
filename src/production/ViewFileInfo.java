@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Test class used to view information in TestResults.txt
+ */
 public class ViewFileInfo {
 
   public static void main(String[] args){

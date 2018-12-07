@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-  /*
+  /**
   Allows employee to enter their first and last name
   Generates a department ID from their name information
 
@@ -17,6 +17,12 @@ public class EmployeeInfo {
   private Pattern p;
   private Scanner in;
 
+    /**
+     * Creates new scanner, calls method to set the employee name
+     * Checks if the name is a first and last separated by a space
+     * If so, sets the code to the first letter of the first name followed by the last name
+     * Sets string patter
+     */
   EmployeeInfo() {
     in = new Scanner(System.in);
 

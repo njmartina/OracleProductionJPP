@@ -1,5 +1,5 @@
 package production;
-/*
+/**
   Concrete class Screen used to define resolution, refresh rate, and response time
  */
 public class Screen implements ScreenSpec {

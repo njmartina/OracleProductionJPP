@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 
-  /*
+  /**
   Class used to process employee and product info and write to a file
   Utilizes paths to get location of file
    */

@@ -6,6 +6,10 @@ package production;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Abstract class used as a skeleton for further products
+ * Features incrementing serial number, dates and names
+ */
 abstract public class Product implements Item, Comparable <Product> {
 
   //Variables used for product class
@@ -16,9 +20,10 @@ abstract public class Product implements Item, Comparable <Product> {
 
   private static int currentProductionNumber = 1;
 
-  //Constructor takes product name and sets field variable
-  //Sets serialnumber to production number while incrementing
-  //Sets manufactured date to current date
+  /**Constructor takes product name and sets field variable
+   * Sets serialnumber to production number while incrementing
+   * Sets manufactured date to current date
+   **/
   public Product(String name) {
     this.name = name;
     serialNumber = currentProductionNumber++;

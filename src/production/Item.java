@@ -5,7 +5,7 @@ package production;
 
 import java.util.Date;
 
-/*
+/**
   Interface item used to implement the following functions
  */
 public interface Item {

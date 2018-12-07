@@ -1,6 +1,6 @@
 package production;
 
-/*
+/**
   Concrete class to capture the details of an audio player
  */
 public class AudioPlayer extends Product implements MultimediaControl {

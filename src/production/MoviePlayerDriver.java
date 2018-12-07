@@ -1,5 +1,8 @@
 package production;
 
+/**
+ * Driver to test the MoviePlayer class
+ */
 public class MoviePlayerDriver {
 
   public static void testMoviePlayer(){
